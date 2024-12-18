@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background:transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #3c393f, #3a4455);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #20093d, #152647);
+  }
+  
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
