@@ -13,10 +13,10 @@ const HeroSection = () => {
         Create the perfect palette or get inspired by thousands of beautiful color schemes.
       </p>
       <div className="flex justify-center gap-6">
-        <button onClick={() => navigate('/palette-manager')} className="bg-blue-500 px-6 py-3 rounded-lg text-white font-semibold hover:bg-blue-600 transition">
+        <button onClick={() => navigate('/palette-manager')} className="bg-blue-500 px-6 py-3 rounded-3xl shadow-md shadow-gray-700 text-white font-semibold hover:bg-blue-600 transition">
           Start the generator!
         </button>
-        <button onClick={() => navigate('/Trending-palettes')} className="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+        <button onClick={() => navigate('/Trending-palettes')} className="bg-white text-blue-500 px-6 py-3 rounded-3xl shadow-md shadow-gray-700 font-semibold hover:bg-gray-200 transition">
           Explore trending palettes
         </button>
       </div>

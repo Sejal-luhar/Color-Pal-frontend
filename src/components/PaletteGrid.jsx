@@ -19,7 +19,7 @@ const PaletteGrid = () => {
 
   return (
     <section className="py-8">
-      <h3 className="text-gray-700 text-2xl font-semibold mb-6 text-center">Explore</h3>
+      <h3 className="text-gray-700 text-3xl underline font-bold mb-6 text-center">Explore</h3>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
         {palettes.map((palette, index) => (
           <div key={index} className="flex flex-col gap-2">

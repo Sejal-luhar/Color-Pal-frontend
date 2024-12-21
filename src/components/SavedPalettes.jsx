@@ -59,7 +59,7 @@ const SavedPalettes = () => {
               palettes.map((palette) => (
                 <div
                   key={palette._id}
-                  className="bg-white shadow-lg rounded-lg p-4 hover:scale-105 transform transition-all cursor-pointer relative"
+                  className="bg-white shadow-lg shadow-gray-600 rounded-lg  p-4 hover:scale-105 transform transition-all cursor-pointer relative"
                 >
                   <h3 className="text-xl font-bold text-gray-700 mb-4">
                     Base Color: {palette.baseColor}
@@ -84,7 +84,7 @@ const SavedPalettes = () => {
                   {/* Open Full-Screen Modal */}
                   <button
                     onClick={() => setSelectedPalette(palette)}
-                    className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                    className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-3xl hover:bg-blue-600"
                   >
                     View Palette
                   </button>

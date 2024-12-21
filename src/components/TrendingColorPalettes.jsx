@@ -84,19 +84,19 @@ const TrendingColorPalettes = () => {
           placeholder="Search by color name or hex code..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="mb-8 p-3 border rounded-md w-full max-w-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="mb-10 p-3 shadow-md  shadow-gray-500 rounded-3xl w-full max-w-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
 
         {/* Display Filtered Color Palettes */}
-        <div className="flex flex-wrap justify-center gap-10">
+        <div className="flex flex-wrap justify-center gap-12">
           {filteredPalettes.map((palette, index) => (
-            <div key={index} className="flex">
+            <div key={index} className="flex shadow shadow-gray-800">
               {palette.map((color, idx) => (
                 <div
                   key={idx}
                   style={{ backgroundColor: color }}
                   onClick={() => copyToClipboard(color)}
-                  className="w-16 h-28 cursor-pointer rounded-md shadow-lg border hover:scale-110 transition-transform relative"
+                  className="w-16 h-28 cursor-pointer rounded-sm  shadow-lg border hover:scale-110 transition-transform relative"
                 >
                   {copiedColor === color && (
                     <span className="absolute bottom-0 bg-black text-white text-xs px-2 py-1 rounded-md left-1/2 transform -translate-x-1/2">
